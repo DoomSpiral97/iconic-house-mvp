@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Iconic House — Variante 01 Rot</title>
+<title>The Iconic House — Variante 03 Editorial</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -14,27 +14,29 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans)}
 .masthead h1{font-family:var(--serif);font-weight:600;letter-spacing:-0.01em;line-height:.9;font-size:clamp(48px,11vw,140px);text-transform:uppercase}
 .masthead .the,.masthead .house{font-family:var(--serif);font-size:clamp(14px,1.8vw,22px);letter-spacing:.35em;text-transform:uppercase}
 .masthead .the{text-align:left}.masthead .house{text-align:right}
-nav{position:sticky;top:0;background:var(--paper);z-index:10;display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:4px solid var(--red)}
+nav{position:sticky;top:0;background:var(--paper);z-index:20;display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:4px solid var(--red)}
 nav .links{display:flex;gap:clamp(16px,5vw,64px);margin:0 auto}
 nav a{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);text-decoration:none}
 nav a:hover{color:var(--red)}
 nav .ic{font-size:20px;line-height:1;width:28px}
-.hero{background:var(--red);height:80vh;min-height:480px;display:flex;justify-content:center;align-items:flex-end;overflow:hidden}
-.hero img{height:100%;width:auto;object-fit:contain;display:block;filter:drop-shadow(0 30px 60px rgba(10,10,10,.35))}
-.claim{padding:clamp(48px,10vw,110px) 24px;text-align:center;max-width:1000px;margin:0 auto}
+.split{position:relative;min-height:82vh;overflow:hidden}
+.split .stripes{position:absolute;top:0;right:0;bottom:0;width:24%;background:repeating-linear-gradient(90deg,var(--ink) 0 24px,var(--paper) 24px 48px)}
+.split .redblock{position:absolute;left:0;bottom:0;width:42%;height:58%;background:var(--red)}
+.split img{position:absolute;bottom:0;left:50%;transform:translateX(-52%);height:96%;width:auto;filter:drop-shadow(0 30px 60px rgba(10,10,10,.30));z-index:2}
+.split .tag{position:absolute;top:32px;left:32px;z-index:3;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;border:1px solid var(--ink);padding:10px 16px;background:var(--paper)}
+.claim{padding:clamp(48px,10vw,110px) 24px;text-align:center;max-width:1000px;margin:0 auto;border-top:1px solid var(--ink)}
 .claim .kicker{font-family:var(--serif);font-size:14px;letter-spacing:.4em;text-transform:uppercase;margin-bottom:36px}
 .claim h2{font-family:var(--serif);font-weight:500;font-size:clamp(30px,5.2vw,64px);line-height:1.12;text-transform:uppercase}
 .claim .dash{width:56px;height:3px;background:var(--red);margin:34px auto 0}
-.zebraband{height:110px;background:repeating-linear-gradient(45deg,var(--ink) 0 22px,var(--paper) 22px 44px)}
-.edit{display:grid;grid-template-columns:1fr;max-width:1280px;margin:0 auto;border-top:1px solid var(--ink)}
-@media(min-width:900px){.edit{grid-template-columns:1fr 1fr}}
-.edit .imgwrap{padding:clamp(24px,4vw,64px)}
-.edit img{width:100%;height:auto;display:block;border:1px solid var(--ink)}
-.edit .txt{display:flex;flex-direction:column;justify-content:center;padding:clamp(24px,4vw,64px);border-top:1px solid var(--ink)}
-@media(min-width:900px){.edit .txt{border-top:none;border-left:1px solid var(--ink)}}
-.edit .tk{font-size:12px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:20px}
-.edit h3{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.4vw,44px);line-height:1.15;text-transform:uppercase;margin-bottom:20px}
-.edit p{max-width:52ch;line-height:1.7;font-size:15px;margin-bottom:28px}
+.archive{display:grid;grid-template-columns:1fr;max-width:1280px;margin:0 auto;border-top:1px solid var(--ink)}
+@media(min-width:900px){.archive{grid-template-columns:5fr 7fr}}
+.archive .imgwrap{padding:clamp(24px,4vw,64px);background:var(--red)}
+.archive img{width:100%;height:auto;display:block;mix-blend-mode:normal;border:1px solid var(--ink)}
+.archive .txt{display:flex;flex-direction:column;justify-content:center;padding:clamp(24px,4vw,64px);border-top:1px solid var(--ink)}
+@media(min-width:900px){.archive .txt{border-top:none;border-left:1px solid var(--ink)}}
+.archive .tk{font-size:12px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:20px}
+.archive h3{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.4vw,44px);line-height:1.15;text-transform:uppercase;margin-bottom:20px}
+.archive p{max-width:52ch;line-height:1.7;font-size:15px;margin-bottom:28px}
 .btn{display:inline-block;align-self:flex-start;background:var(--ink);color:var(--paper);padding:14px 30px;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;text-decoration:none}
 .btn:hover{background:var(--red)}
 .variants{border-top:1px solid var(--ink);padding:clamp(48px,8vw,90px) 24px;max-width:1000px;margin:0 auto}
@@ -45,8 +47,7 @@ nav .ic{font-size:20px;line-height:1;width:28px}
 .vl:hover{color:var(--red)}
 .vl.current{color:var(--red)}
 .vl.current span{color:var(--ink)}
-footer .zebra-stripes{height:64px;background:repeating-linear-gradient(90deg,var(--ink) 0 34px,var(--paper) 34px 68px)}
-footer .fbar{background:var(--ink);color:var(--paper);display:flex;justify-content:space-between;padding:18px 24px;font-size:11px;letter-spacing:.25em;text-transform:uppercase}
+footer{height:80px;background:repeating-linear-gradient(45deg,var(--ink) 0 22px,var(--paper) 22px 44px)}
 </style>
 </head>
 <body>
@@ -60,31 +61,32 @@ footer .fbar{background:var(--ink);color:var(--paper);display:flex;justify-conte
   <div class="links"><a href="#">Archive</a><a href="#">Editorials</a><a href="#">Salon Privé</a></div>
   <span class="ic">&#128269;</span>
 </nav>
-<section class="hero"><img src="assets/AngieBannerNoBg.png" alt="Couture-Model freigestellt auf rotem Banner"></section>
+<section class="split">
+  <div class="redblock"></div>
+  <div class="stripes"></div>
+  <img src="assets/AngieBannerNoBg.png" alt="Couture-Model freigestellt im Editorial-Split">
+  <span class="tag">Editorial N°1 — Autumn 26</span>
+</section>
 <section class="claim">
   <p class="kicker">The Iconic Archive</p>
   <h2>Mode ist keine Dekoration.<br>Sie ist Autorität.</h2>
   <div class="dash"></div>
 </section>
-<div class="zebraband"></div>
-<section class="edit">
+<section class="archive">
   <div class="imgwrap"><img src="assets/AngieBanner.jpg" alt="Editorial Backplate"></div>
   <div class="txt">
-    <p class="tk">Editorial N°1</p>
+    <p class="tk">Archive</p>
     <h3>Silhouetten, die man nicht übersieht.</h3>
-    <p>Schwarze Schneiderei trifft weißes Drama. Das erste Editorial des Hauses zeigt Couture als Statement — reduziert auf Rot, Schwarz und Weiß, kompromisslos in jeder Linie.</p>
-    <a class="btn" href="#">Editorial ansehen</a>
+    <p>Schwarze Schneiderei trifft weißes Drama. Das Archiv versammelt die ikonischsten Looks des Hauses — kuratiert, dokumentiert, zeitlos.</p>
+    <a class="btn" href="#">Archiv entdecken</a>
   </div>
 </section>
 <section class="variants">
   <p class="vk">Konzept-Varianten</p>
-  <a class="vl current" href="index.html"><span>01</span>Rot — Klassisches Banner</a>
+  <a class="vl" href="index.html"><span>01</span>Rot — Klassisches Banner</a>
   <a class="vl" href="option-b.html"><span>02</span>Zebra — Dark Statement</a>
-  <a class="vl" href="option-c.html"><span>03</span>Editorial — Split Hero</a>
+  <a class="vl current" href="option-c.html"><span>03</span>Editorial — Split Hero</a>
 </section>
-<footer>
-  <div class="zebra-stripes"></div>
-  <div class="fbar"><span>© 2026 The Iconic House</span><span>Konzept-MVP</span></div>
-</footer>
+<footer></footer>
 </body>
 </html>

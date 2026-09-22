@@ -1,25 +1,27 @@
 # iconic-house-mvp
 
-MVP/Size-Test-Screendesign für das Fashion-Banner von **The Iconic House**.
+Drei Landing-Page-Konzepte für **The Iconic House** – zum Kunden zeigen.
 
-## Assets
+## Varianten
 
-Im Ordner `assets/` (bereits committet):
+| Datei | Konzept | Look |
+|---|---|---|
+| `index.html` | Variante 01 – Rot | Rotes Full-Bleed-Banner, Klassiker |
+| `option-b.html` | Variante 02 – Zebra | Dunkel, diagonale Zebra-Streifen, roter Claim |
+| `option-c.html` | Variante 03 – Editorial | Split-Hero, Magazin-Anmutung, Streifen-Spalte |
 
-- `AngieBannerNoBg.png` – freigestelltes Model mit Transparenz, wird im
-  Hero-Banner verwendet (Achtung: ~9,7 MB – für den Launch als WebP mit
-  Alphakanal optimieren, lädt dann ca. 10× schneller)
-- `AngieBanner.jpg` – Originalfoto mit Backplate (~2,8 MB)
+Jede Seite verlinkt unten im Abschnitt **Konzept-Varianten** auf die beiden
+anderen. Zum Vergleichen einfach die Seiten direkt öffnen oder per GitHub
+Pages hosten.
 
-## Nutzung
+## Assets (`assets/`)
 
-`index.html` im Browser öffnen oder per GitHub Pages hosten. Die Seite enthält
-ein **Bildgrößen-Audit**: Es vergleicht pro Bild die Original-Pixel mit der
-Display-Größe und zeigt eine Bewertung (OK / Knapp / Zu klein). Fenstergröße
-ändern und neu laden, um Geräte zu simulieren.
+- `AngieBannerNoBg.png` – freigestelltes Model (Hero aller Varianten)
+- `AngieBanner.jpg` – Original mit Backplate (Editorial-/Archiv-Teaser)
+- Hinweis: Die PNG (~9,7 MB) vor dem Livegang als WebP mit Alpha optimieren.
 
 ## Styleguide-Kerne
 
-- Farben: `#D60413` (Red), `#0A0A0A` (Black), `#F7F7F5` (Off-White)
+- Farben: `#CA0205` (Red), `#F2F2F2` (Paper), Schwarz/Weiß, Zebra- & Streifenmuster
 - Serifen: Playfair Display (Fallback Didot/Bodoni), Sans: Inter
 - Nav-Trennlinie 4 px rot, Sektionstrenner 1 px schwarz

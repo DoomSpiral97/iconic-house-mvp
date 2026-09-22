@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Iconic House — Variante 02 Zebra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#CA0205;--paper:#F2F2F2;--ink:#0A0A0A;--serif:'Playfair Display','Didot','Bodoni MT',Georgia,serif;--sans:'Inter','Helvetica Neue',Arial,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--ink);color:var(--paper);font-family:var(--sans)}
+.masthead{max-width:1280px;margin:0 auto;padding:28px 24px 20px;text-align:center;border-bottom:1px solid var(--paper)}
+.masthead h1{font-family:var(--serif);font-weight:600;letter-spacing:-0.01em;line-height:.9;font-size:clamp(48px,11vw,140px);text-transform:uppercase}
+.masthead .the,.masthead .house{font-family:var(--serif);font-size:clamp(14px,1.8vw,22px);letter-spacing:.35em;text-transform:uppercase}
+.masthead .the{text-align:left}.masthead .house{text-align:right}
+nav{position:sticky;top:0;background:var(--ink);z-index:10;display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:4px solid var(--red)}
+nav .links{display:flex;gap:clamp(16px,5vw,64px);margin:0 auto}
+nav a{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--paper);text-decoration:none}
+nav a:hover{color:var(--red)}
+nav .ic{font-size:20px;line-height:1;width:28px}
+.hero{background:var(--ink);height:80vh;min-height:480px;display:flex;justify-content:center;align-items:flex-end;overflow:hidden;position:relative}
+.hero::before{content:'';position:absolute;left:0;top:0;bottom:0;width:16%;background:repeating-linear-gradient(45deg,var(--paper) 0 16px,transparent 16px 32px);opacity:.16}
+.hero::after{content:'';position:absolute;right:0;top:0;bottom:0;width:16%;background:repeating-linear-gradient(-45deg,var(--paper) 0 16px,transparent 16px 32px);opacity:.16}
+.hero img{height:100%;width:auto;object-fit:contain;display:block;position:relative;z-index:1;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6))}
+.claim{background:var(--red);padding:clamp(48px,10vw,110px) 24px;text-align:center}
+.claim .kicker{font-family:var(--serif);font-size:14px;letter-spacing:.4em;text-transform:uppercase;margin-bottom:36px;color:var(--paper)}
+.claim h2{font-family:var(--serif);font-weight:500;font-size:clamp(30px,5.2vw,64px);line-height:1.12;text-transform:uppercase;color:var(--paper)}
+.claim .dash{width:56px;height:3px;background:var(--paper);margin:34px auto 0}
+.zebraband{height:110px;background:repeating-linear-gradient(45deg,var(--paper) 0 22px,var(--ink) 22px 44px)}
+.edit{display:grid;grid-template-columns:1fr;max-width:1280px;margin:0 auto;border-top:1px solid var(--paper)}
+@media(min-width:900px){.edit{grid-template-columns:1fr 1fr}}
+.edit .imgwrap{padding:clamp(24px,4vw,64px);order:2}
+.edit img{width:100%;height:auto;display:block;border:1px solid var(--paper)}
+.edit .txt{display:flex;flex-direction:column;justify-content:center;padding:clamp(24px,4vw,64px);border-top:1px solid var(--paper)}
+@media(min-width:900px){.edit .txt{border-top:none;border-right:1px solid var(--paper)}}
+.edit .tk{font-size:12px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:20px}
+.edit h3{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.4vw,44px);line-height:1.15;text-transform:uppercase;margin-bottom:20px}
+.edit p{max-width:52ch;line-height:1.7;font-size:15px;margin-bottom:28px;color:rgba(242,242,242,.85)}
+.btn{display:inline-block;align-self:flex-start;background:var(--paper);color:var(--ink);padding:14px 30px;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;text-decoration:none}
+.btn:hover{background:var(--red);color:var(--paper)}
+.variants{border-top:1px solid var(--paper);padding:clamp(48px,8vw,90px) 24px;max-width:1000px;margin:0 auto}
+.variants .vk{font-family:var(--serif);font-size:14px;letter-spacing:.4em;text-transform:uppercase;text-align:center;margin-bottom:40px}
+.vl{display:flex;align-items:baseline;gap:22px;padding:22px 4px;border-top:1px solid var(--paper);text-decoration:none;color:var(--paper);font-family:var(--serif);font-size:clamp(20px,3vw,30px);text-transform:uppercase}
+.vl:last-of-type{border-bottom:1px solid var(--paper)}
+.vl span{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.2em;color:var(--red)}
+.vl:hover{color:var(--red)}
+.vl.current{color:var(--red)}
+footer .zebra-stripes{height:64px;background:repeating-linear-gradient(45deg,var(--paper) 0 20px,var(--ink) 20px 40px)}
+footer .fbar{background:var(--red);color:var(--paper);display:flex;justify-content:space-between;padding:18px 24px;font-size:11px;letter-spacing:.25em;text-transform:uppercase}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="the">The</div>
+  <h1>Iconic</h1>
+  <div class="house">House</div>
+</header>
+<nav>
+  <span class="ic">&#9776;</span>
+  <div class="links"><a href="#">Archive</a><a href="#">Editorials</a><a href="#">Salon Privé</a></div>
+  <span class="ic">&#128269;</span>
+</nav>
+<section class="hero"><img src="assets/AngieBannerNoBg.png" alt="Couture-Model freigestellt auf schwarzem Grund"></section>
+<div class="zebraband"></div>
+<section class="claim">
+  <p class="kicker">The Iconic Archive</p>
+  <h2>Mode ist keine Dekoration.<br>Sie ist Autorität.</h2>
+  <div class="dash"></div>
+</section>
+<section class="edit">
+  <div class="txt">
+    <p class="tk">Editorial N°1</p>
+    <h3>Silhouetten, die man nicht übersieht.</h3>
+    <p>Schwarze Schneiderei trifft weißes Drama. Das erste Editorial des Hauses zeigt Couture als Statement — reduziert auf Rot, Schwarz und Weiß, kompromisslos in jeder Linie.</p>
+    <a class="btn" href="#">Editorial ansehen</a>
+  </div>
+  <div class="imgwrap"><img src="assets/AngieBanner.jpg" alt="Editorial Backplate"></div>
+</section>
+<section class="variants">
+  <p class="vk">Konzept-Varianten</p>
+  <a class="vl" href="index.html"><span>01</span>Rot — Klassisches Banner</a>
+  <a class="vl current" href="option-b.html"><span>02</span>Zebra — Dark Statement</a>
+  <a class="vl" href="option-c.html"><span>03</span>Editorial — Split Hero</a>
+</section>
+<footer>
+  <div class="zebra-stripes"></div>
+  <div class="fbar"><span>© 2026 The Iconic House</span><span>Konzept-MVP</span></div>
+</footer>
+</body>
+</html>
