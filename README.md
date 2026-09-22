@@ -2,18 +2,20 @@
 
 MVP/Size-Test-Screendesign für das Fashion-Banner von **The Iconic House**.
 
+## Assets
+
+Folgende Dateien in den Ordner `assets/` legen (Dateinamen exakt):
+
+- `hero-cutout.webp` – freigestelltes Model (1080 × 1620 px, transparent), wird im Hero-Banner verwendet
+- `AngieBanner.jpg` – Originalfoto mit Backplate (1080 × 1620 px)
+- `AngieBannerNoBg.jpg` – JPG ohne Hintergrund (weiß, ohne Alphakanal)
+
 ## Nutzung
 
-1. Die drei Referenzbilder in den Ordner `assets/` legen (exakt diese Dateinamen):
-   - `assets/Untitled.jpg` (773 × 1599 px)
-   - `assets/Untitled2-2.jpg` (740 × 1600 px)
-   - `assets/Untitled3-3.jpg` (777 × 1600 px)
-2. `index.html` im Browser öffnen oder per GitHub Pages hosten.
-
-Die Seite enthält unten ein **Bildgrößen-Audit**: Es vergleicht pro Bild die
-Original-Pixel mit der tatsächlichen Display-Größe auf dem Bildschirm und zeigt
-eine Bewertung (OK / Knapp / Zu klein). Fenster vergrößern/verkleinern und neu
-laden, um verschiedene Endgeräte zu simulieren.
+`index.html` im Browser öffnen oder per GitHub Pages hosten. Die Seite enthält
+ein **Bildgrößen-Audit**: Es vergleicht pro Bild die Original-Pixel mit der
+Display-Größe und zeigt eine Bewertung (OK / Knapp / Zu klein). Fenstergröße
+ändern und neu laden, um Geräte zu simulieren.
 
 ## Styleguide-Kerne
 
