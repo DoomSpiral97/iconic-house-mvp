@@ -1,1 +1,98 @@
-__IDX__
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Iconic House – Banner-MVP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#D60413;--black:#0A0A0A;--white:#F7F7F5;--serif:'Playfair Display','Didot','Bodoni MT',Georgia,serif;--sans:'Inter','Helvetica Neue',Arial,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:var(--sans)}
+.masthead{max-width:1280px;margin:0 auto;padding:28px 24px 20px;text-align:center;border-bottom:1px solid var(--black)}
+.masthead h1{font-family:var(--serif);font-weight:600;letter-spacing:-0.01em;line-height:.9;font-size:clamp(48px,11vw,140px);text-transform:uppercase}
+.masthead .the,.masthead .house{font-family:var(--serif);font-size:clamp(14px,1.8vw,22px);letter-spacing:.35em;text-transform:uppercase}
+.masthead .the{text-align:left}.masthead .house{text-align:right}
+nav{position:sticky;top:0;background:var(--white);z-index:10;display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:4px solid var(--red)}
+nav .links{display:flex;gap:clamp(16px,5vw,64px);margin:0 auto}
+nav a{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--black);text-decoration:none}
+nav a:hover{color:var(--red)}
+nav .ic{font-size:20px;line-height:1;width:28px;text-align:center}
+.hero{background:var(--red);height:78vh;min-height:480px;display:flex;justify-content:center;align-items:flex-end;overflow:hidden}
+.hero img{height:100%;width:auto;object-fit:contain;display:block}
+.claim{padding:clamp(48px,10vw,110px) 24px;text-align:center;max-width:1000px;margin:0 auto}
+.claim .kicker{font-family:var(--serif);font-size:14px;letter-spacing:.4em;text-transform:uppercase;margin-bottom:36px}
+.claim h2{font-family:var(--serif);font-weight:500;font-size:clamp(30px,5.2vw,64px);line-height:1.12;text-transform:uppercase}
+.claim .dash{width:56px;height:3px;background:var(--red);margin:34px auto 0}
+.audit{padding:64px 24px 96px;border-top:1px solid var(--black)}
+.audit-inner{max-width:1280px;margin:0 auto}
+.audit h3{font-family:var(--serif);font-size:clamp(24px,3vw,38px);text-transform:uppercase;margin-bottom:8px}
+.audit p.hint{font-size:14px;margin-bottom:32px;max-width:720px;line-height:1.6}
+.audit-grid{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:900px){.audit-grid{grid-template-columns:repeat(3,1fr)}}
+.card{border:1px solid var(--black);background:#fff;display:flex;flex-direction:column}
+.card .imgwrap{background:var(--red);display:flex;justify-content:center;max-height:420px;overflow:hidden}
+.card img{width:100%;height:100%;object-fit:cover;display:block}
+.card .meta{padding:14px 16px;font-size:12.5px;line-height:1.9;border-top:1px solid var(--black)}
+.badge{display:inline-block;padding:2px 10px;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--white)}
+.ok{background:#0a8a3a}.warn{background:#c58a00}.bad{background:var(--red)}
+footer{display:flex;height:64px}
+footer span{flex:1}
+footer span:nth-child(odd){background:var(--black)}
+footer span:nth-child(even){background:var(--white)}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="the">The</div>
+  <h1>Iconic</h1>
+  <div class="house">House</div>
+</header>
+<nav>
+  <span class="ic">&#9776;</span>
+  <div class="links"><a href="#">Archive</a><a href="#">Editorials</a><a href="#">Salon Privé</a></div>
+  <span class="ic">&#128269;</span>
+</nav>
+<section class="hero"><img class="audit-img" data-name="hero-model (Untitled2-2.jpg)" src="assets/Untitled2-2.jpg" alt="Couture-Model auf rotem Banner"></section>
+<section class="claim">
+  <p class="kicker">The Iconic Archive</p>
+  <h2>Mode ist keine Dekoration.<br>Sie ist Autorität.</h2>
+  <div class="dash"></div>
+</section>
+<section class="audit">
+  <div class="audit-inner">
+    <h3>Bildgrößen-Audit</h3>
+    <p class="hint">Vergleicht die Original-Pixelbreite jedes Bildes mit der Display-Breite auf deinem Bildschirm. Bewertung: <b>OK</b> = Original ≥ 1,5 × Display (Retina-tauglich), <b>Knapp</b> = ≥ 1 × Display, <b>Zu klein</b> = kleiner als Display. Fenstergröße ändern und neu laden, um Geräte zu simulieren.</p>
+    <div class="audit-grid">
+      <div class="card"><div class="imgwrap"><img class="audit-img" data-name="Layout-Variante 1 (Untitled.jpg)" src="assets/Untitled.jpg" alt="Layout Variante 1"></div><div class="meta" data-meta></div></div>
+      <div class="card"><div class="imgwrap"><img class="audit-img" data-name="Model freigestellt (Untitled2-2.jpg)" src="assets/Untitled2-2.jpg" alt="Model Variante"></div><div class="meta" data-meta></div></div>
+      <div class="card"><div class="imgwrap"><img class="audit-img" data-name="Banner-Referenz (Untitled3-3.jpg)" src="assets/Untitled3-3.jpg" alt="Banner Referenz"></div><div class="meta" data-meta></div></div>
+    </div>
+  </div>
+</section>
+<footer><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></footer>
+<script>
+function audit(){
+  document.querySelectorAll('.audit-img').forEach(function(img){
+    var meta = img.closest('.card') ? img.closest('.card').querySelector('[data-meta]') : null;
+    var nw = img.naturalWidth, nh = img.naturalHeight, dw = img.clientWidth || 1, dh = img.clientHeight;
+    var ratio = nw / dw;
+    var cls = ratio >= 1.5 ? 'ok' : (ratio >= 1 ? 'warn' : 'bad');
+    var label = ratio >= 1.5 ? 'OK' : (ratio >= 1 ? 'Knapp' : 'Zu klein');
+    var out = '<b>' + img.dataset.name + '</b><br>Original: ' + nw + ' × ' + nh + ' px<br>Anzeige: ca. ' + dw + ' × ' + dh + ' px<br><span class="badge ' + cls + '">' + label + '</span> (' + ratio.toFixed(2) + '×)';
+    if(meta){ meta.innerHTML = out; }
+    else {
+      var old = document.getElementById('hero-audit'); if(old) old.remove();
+      var d = document.createElement('div'); d.id = 'hero-audit';
+      d.style.cssText = 'position:fixed;left:12px;bottom:12px;background:#fff;border:1px solid #0A0A0A;padding:10px 14px;font:12.5px/1.8 Inter,sans-serif;z-index:99';
+      d.innerHTML = '<b>Banner (' + img.dataset.name + ')</b><br>Original: ' + nw + ' × ' + nh + ' px · Anzeige: ' + dw + ' px breit · <span class="badge ' + cls + '">' + label + '</span>';
+      document.body.appendChild(d);
+    }
+  });
+}
+window.addEventListener('load', audit);
+window.addEventListener('resize', audit);
+</script>
+</body>
+</html>
