@@ -13,16 +13,23 @@ Drei saubere Landing-Page-Mockups für **The Iconic House**, vollständig getren
 - `js/main.js` – gemeinsamer Einstiegspunkt
 - `js/navigation.js` – Menü, Suche und Tastatursteuerung
 - `js/reveal.js` – Scroll-Reveal mit Reduced-Motion-Fallback
-- `assets/` – Bilder und optimierte WebP-Dateien
+- `assets/` – Bilder
 
 ## Nutzung
 
 Die HTML-Dateien direkt öffnen oder GitHub Pages auf Branch `main` und Root `/` aktivieren. Die Seiten verlinken untereinander im Abschnitt „Konzept-Varianten“.
 
-## Performance
+## Bilder
 
-Die Seiten versuchen zuerst `hero-model.webp` und `backplate.webp` zu laden. Falls diese Dateien noch nicht in `assets/` liegen, greift das `<picture>` automatisch auf `AngieBannerNoBg.png` beziehungsweise `AngieBanner.jpg` zurück.
+Alle Seiten laden direkt aus `assets/`:
+
+- Hero: `AngieBannerNoBg.png`
+- Teaser: `AngieBanner.jpg`
+
+**Optional später:** Die optimierten Dateien `hero-model.webp` (63 KB) und
+`backplate.webp` (60 KB) in `assets/` legen und die `src`-Pfade umstellen —
+damit sinkt die Ladezeit von ~12 MB auf ~123 KB.
 
 ## Design
 
-Farben: `#CA0205`, `#F2F2F2`, Schwarz und Weiß. Typografie: Playfair Display mit Didot/Bodoni-Fallback und Inter. Das Layout verwendet ein gemeinsames 8-Punkt-Spacingsystem, responsive Breakpoints, Fokuszustände und Reduced-Motion-Unterstützung.
+Farben: `#CA0205`, `#F2F2F2`, Schwarz und Weiß. Typografie: Playfair Display mit Didot/Bodoni-Fallback und Inter. Gemeinsames 8-Punkt-Spacing, responsive Breakpoints, Fokuszustände und Reduced-Motion-Unterstützung.
