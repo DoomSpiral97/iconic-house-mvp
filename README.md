@@ -4,11 +4,12 @@ MVP/Size-Test-Screendesign für das Fashion-Banner von **The Iconic House**.
 
 ## Assets
 
-Folgende Dateien in den Ordner `assets/` legen (Dateinamen exakt):
+Im Ordner `assets/` (bereits committet):
 
-- `hero-cutout.webp` – freigestelltes Model (1080 × 1620 px, transparent), wird im Hero-Banner verwendet
-- `AngieBanner.jpg` – Originalfoto mit Backplate (1080 × 1620 px)
-- `AngieBannerNoBg.jpg` – JPG ohne Hintergrund (weiß, ohne Alphakanal)
+- `AngieBannerNoBg.png` – freigestelltes Model mit Transparenz, wird im
+  Hero-Banner verwendet (Achtung: ~9,7 MB – für den Launch als WebP mit
+  Alphakanal optimieren, lädt dann ca. 10× schneller)
+- `AngieBanner.jpg` – Originalfoto mit Backplate (~2,8 MB)
 
 ## Nutzung
 
