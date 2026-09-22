@@ -1,27 +1,28 @@
 # iconic-house-mvp
 
-Drei Landing-Page-Konzepte für **The Iconic House** – zum Kunden zeigen.
+Drei saubere Landing-Page-Mockups für **The Iconic House**, vollständig getrennt in HTML, CSS und JavaScript.
 
-## Varianten
+## Struktur
 
-| Datei | Konzept | Look |
-|---|---|---|
-| `index.html` | Variante 01 – Rot | Rotes Full-Bleed-Banner, Klassiker |
-| `option-b.html` | Variante 02 – Zebra | Dunkel, diagonale Zebra-Streifen, roter Claim |
-| `option-c.html` | Variante 03 – Editorial | Split-Hero, Magazin-Anmutung, Streifen-Spalte |
+- `index.html` – Variante 01 Rot
+- `option-b.html` – Variante 02 Zebra
+- `option-c.html` – Variante 03 Editorial
+- `css/base.css` – Designsystem, Reset, Tokens und Accessibility-Basis
+- `css/components.css` – gemeinsame UI-Komponenten
+- `css/variants.css` – variantenspezifische Layouts
+- `js/main.js` – gemeinsamer Einstiegspunkt
+- `js/navigation.js` – Menü, Suche und Tastatursteuerung
+- `js/reveal.js` – Scroll-Reveal mit Reduced-Motion-Fallback
+- `assets/` – Bilder und optimierte WebP-Dateien
 
-Jede Seite verlinkt unten im Abschnitt **Konzept-Varianten** auf die beiden
-anderen. Zum Vergleichen einfach die Seiten direkt öffnen oder per GitHub
-Pages hosten.
+## Nutzung
 
-## Assets (`assets/`)
+Die HTML-Dateien direkt öffnen oder GitHub Pages auf Branch `main` und Root `/` aktivieren. Die Seiten verlinken untereinander im Abschnitt „Konzept-Varianten“.
 
-- `AngieBannerNoBg.png` – freigestelltes Model (Hero aller Varianten)
-- `AngieBanner.jpg` – Original mit Backplate (Editorial-/Archiv-Teaser)
-- Hinweis: Die PNG (~9,7 MB) vor dem Livegang als WebP mit Alpha optimieren.
+## Performance
 
-## Styleguide-Kerne
+Die Seiten versuchen zuerst `hero-model.webp` und `backplate.webp` zu laden. Falls diese Dateien noch nicht in `assets/` liegen, greift das `<picture>` automatisch auf `AngieBannerNoBg.png` beziehungsweise `AngieBanner.jpg` zurück.
 
-- Farben: `#CA0205` (Red), `#F2F2F2` (Paper), Schwarz/Weiß, Zebra- & Streifenmuster
-- Serifen: Playfair Display (Fallback Didot/Bodoni), Sans: Inter
-- Nav-Trennlinie 4 px rot, Sektionstrenner 1 px schwarz
+## Design
+
+Farben: `#CA0205`, `#F2F2F2`, Schwarz und Weiß. Typografie: Playfair Display mit Didot/Bodoni-Fallback und Inter. Das Layout verwendet ein gemeinsames 8-Punkt-Spacingsystem, responsive Breakpoints, Fokuszustände und Reduced-Motion-Unterstützung.
